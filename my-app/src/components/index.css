@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.video-container{
+    width: 50%;
+    height: 100vh;
+
+}
+
+video{
+    width:50vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-controls{
+    overflow: hidden;
+    position: relative;
+}
+
+.video-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+}
+
+.video-text{
+    font-family: inherit;
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+
+@media screen and (max-width:900px){
+    video{
+        width:100vw;
+        height: 100vh;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.1);
+    }
+  }
